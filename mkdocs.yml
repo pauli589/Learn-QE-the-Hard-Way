@@ -1,0 +1,54 @@
+site_name: Learn QE the Hard Way
+site_description: 华语圈最接地气的 Quantum ESPRESSO 手把手入门教程 —— 复刻大师兄 LVASPTHW 风格
+site_author: pauli589
+repo_url: https://github.com/pauli589/Learn-QE-the-Hard-Way
+repo_name: Learn-QE-the-Hard-Way
+
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - bash
+    - fortran
+    - python
+    - ini
+
+nav:
+  - 首页: index.md
+  - 序言: xuyan.md
+  - Chapter 1 准备工作:
+      - Ex1.1 QE 是什么: ch01/ex1-1.md
+      - Ex1.2 安装与编译: ch01/ex1-2.md
+      - Ex1.3 输入文件哲学: ch01/ex1-3.md
+  - Chapter 2 pw.x 核心:
+      - Ex2.1 CONTROL 块: ch02/ex2-1.md
+      - Ex2.2 SYSTEM 块: ch02/ex2-2.md
+      - Ex2.3 ELECTRONS 与 SCF: ch02/ex2-3.md
+      - Ex2.4 K_POINTS: ch02/ex2-4.md
+      - Ex2.5 赝势: ch02/ex2-5.md
+  - Chapter 3 实战（硅）:
+      - Ex3.1 SCF: ch03/ex3-1.md
+      - Ex3.2 能带: ch03/ex3-2.md
+      - Ex3.3 DOS 与 PDOS: ch03/ex3-3.md
+      - Ex3.4 结构优化: ch03/ex3-4.md
+  - Chapter 4 后处理与进阶:
+      - Ex4.1 后处理工具全景: ch04/ex4-1.md
+      - Ex4.2 二维与真空层: ch04/ex4-2.md
+      - Ex4.3 SOC 与磁性: ch04/ex4-3.md
+      - Ex4.4 Wannier90 接口: ch04/ex4-4.md
+  - Chapter 5 报错与瞎扯:
+      - Ex5.1 常见报错急诊室: ch05/ex5-1.md
+      - Ex5.2 集群与并行: ch05/ex5-2.md
+      - Ex5.3 瞎扯: ch05/ex5-3.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
